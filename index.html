@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Login Form</title>
+<link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
-    <h1>hello , should work</h1>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn-submit">SUBMIT</button>
+    </form>
+    <div class="register-link">
+        <a href="#">REGISTER</a>
+    </div>
+</div>
+
+<script src="Script/script.js"></script>
 </body>
 </html>
