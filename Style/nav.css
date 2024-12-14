@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #1a1a1a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5), 
+                0 0 15px rgba(0, 255, 255, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    transition: transform 0.2s, box-shadow 0.2s, color 0.3s;
+    background: linear-gradient(145deg, #1e1e1e, #232323);
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 5px #141414, inset -2px -2px 5px #2e2e2e;
+}
+
+/* 3D Hover Effect */
+.navbar a:hover {
+    transform: translateY(-5px);
+    color: #00ffcc;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5), 
+                0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* Active Link */
+.navbar a:active {
+    transform: translateY(2px);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
